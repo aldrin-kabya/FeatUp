@@ -6,7 +6,7 @@ summarize: true
 experiment_name: "exp1"
 
 # Dataset args
-dataset: "imagenet"
+dataset: "cocostuff"
 split: "val"
 partition: 0
 total_partitions: 1
