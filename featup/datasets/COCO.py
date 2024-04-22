@@ -56,7 +56,7 @@ class Coco(Dataset):
         self.include_labels = include_labels
 
         if self.subset is None:
-            self.image_list = "train.txt"
+            self.image_list = "Coco164kFull_Stuff_Coarse.txt"
         elif self.subset == 6:  # IIC Coarse
             self.image_list = "Coco164kFew_Stuff_6.txt"
         elif self.subset == 7:  # IIC Fine
@@ -72,7 +72,7 @@ class Coco(Dataset):
         self.image_files = []
         self.label_files = []
         for split_dir in split_dirs[self.split]:
-            with open(join(self.root, "imageLists", split_dir, self.image_list), "r") as f:
+            with open(join(self.root, "curated", split_dir, self.image_list), "r") as f:
                 img_ids = [fn.rstrip() for fn in f.readlines()]
                 for img_id in img_ids:
                     self.image_files.append(join(self.root, "images", split_dir, img_id + ".jpg"))
