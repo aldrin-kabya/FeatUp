@@ -1,6 +1,6 @@
 # Environment Args
 output_root: '../../'
-pytorch_data_dir: '/kaggle/input/cocostuff-10k-v1-1/cocostuff-10k-v1.1'
+pytorch_data_dir: '/kaggle/input/cocostuff-1'
 submitting_to_aml: false
 
 # Dataset args
