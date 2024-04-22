@@ -47,7 +47,7 @@ class Coco(Dataset):
                  subset=None):
         super(Coco, self).__init__()
         self.split = split
-        self.root = join(root, "cocostuff")
+        self.root = root
         self.coarse_labels = coarse_labels
         self.transform = transform
         self.label_transform = target_transform
